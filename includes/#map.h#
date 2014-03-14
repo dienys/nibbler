@@ -5,7 +5,7 @@
 ** Login   <bloubtek@epitech.net>
 ** 
 ** Started on  Fri Mar  7 18:53:40 2014 morgane ferrandis
-** Last update Fri Mar 14 19:54:23 2014 morgane ferrandis
+** Last update Fri Mar 14 17:27:31 2014 morgane ferrandis
 */
 
 #ifndef MAP_H_
@@ -19,14 +19,14 @@ class		Map
   int		yMax;
   Snake		snake;
 
-  Map(Map map);
-  Map		&Operator=(Map map);
+  Map(int x, int y);
+  Map		&Operator=(int x, int y);
 
 public:
 
   explicit Map(int, int);
   ~Map();
-  Bonus		bonus;
+  // Bonus		bonus;
 }
 
 #endif /* !MAP_H_ */

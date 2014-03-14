@@ -1,0 +1,21 @@
+/*
+** Bonus.h for Bonus in /home/bloubtek/projets/nibbler/includes
+** 
+** Made by morgane ferrandis
+** Login   <ferran_m@epitech.eu>
+** 
+** Started on  Fri Mar 14 19:52:23 2014 morgane ferrandis
+** Last update Fri Mar 14 19:53:52 2014 morgane ferrandis
+*/
+
+#ifndef BONUS_H_
+# define BONUS_H_
+
+class	Bonus
+{
+  int	x;
+  int	y;
+
+};
+
+#endif /* !BONUS_H_ */
