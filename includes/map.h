@@ -5,7 +5,7 @@
 ** Login   <bloubtek@epitech.net>
 ** 
 ** Started on  Fri Mar  7 18:53:40 2014 morgane ferrandis
-** Last update Fri Mar  7 19:30:05 2014 morgane ferrandis
+** Last update Fri Mar 14 14:54:48 2014 morgane ferrandis
 */
 
 #ifndef MAP_H_
@@ -26,8 +26,6 @@ public:
   Map(int x, int y);
   Map		&Operator=(int x, int y);
   // Bonus		bonus;
-
-  Snake	getSnake();
 }
 
 #endif /* !MAP_H_ */

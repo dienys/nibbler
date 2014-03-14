@@ -1,0 +1,20 @@
+##
+## Makefile for Makefile in /home/bloubtek/projets/nibbler
+## 
+## Made by morgane ferrandis
+## Login   <bloubtek@epitech.net>
+## 
+## Started on  Fri Mar 14 14:26:23 2014 morgane ferrandis
+## Last update Fri Mar 14 14:31:48 2014 morgane ferrandis
+##
+
+NAME		=
+
+SRC		=
+
+OBJ		=
+
+all:		$(NAME)
+
+$(NAME):	$(OBJ)
+		cc -o $(NAME) $(OBJ)
