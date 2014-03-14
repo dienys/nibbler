@@ -5,7 +5,7 @@
 ** Login   <bloubtek@epitech.net>
 ** 
 ** Started on  Fri Mar  7 18:53:40 2014 morgane ferrandis
-** Last update Fri Mar 14 19:54:23 2014 morgane ferrandis
+** Last update Fri Mar 14 20:17:18 2014 morgane ferrandis
 */
 
 #ifndef MAP_H_
@@ -24,9 +24,11 @@ class		Map
 
 public:
 
-  explicit Map(int, int);
+  explicit Map(int xMax, int yMax);
   ~Map();
   Bonus		bonus;
+  const int	getXMax();
+  const int	getYMax();
 }
 
 #endif /* !MAP_H_ */
