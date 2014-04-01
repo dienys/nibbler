@@ -5,7 +5,7 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar 14 20:13:05 2014 morgane ferrandis
-** Last update Fri Mar 14 20:15:19 2014 morgane ferrandis
+** Last update Tue Apr  1 18:15:32 2014 morgane ferrandis
 */
 
 Bonus::Bonus(int x, int y, int score)
@@ -15,7 +15,7 @@ Bonus::Bonus(int x, int y, int score)
   this->score = score;
 }
 
-~Bonus::Bonus()
+Bonus::~Bonus()
 {
 }
 

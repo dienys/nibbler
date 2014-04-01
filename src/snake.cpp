@@ -5,10 +5,10 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar 14 17:34:31 2014 morgane ferrandis
-** Last update Tue Apr  1 18:53:34 2014 morgane ferrandis
+** Last update Tue Apr  1 18:23:04 2014 morgane ferrandis
 */
 
-#include "snake.h"
+#include "../includes/snake.h"
 
 // class Snake
 

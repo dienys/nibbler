@@ -5,24 +5,30 @@
 ## Login   <bloubtek@epitech.net>
 ## 
 ## Started on  Fri Mar 14 14:26:23 2014 morgane ferrandis
-## Last update Tue Apr  1 18:54:37 2014 morgane ferrandis
+## Last update Tue Apr  1 18:14:33 2014 morgane ferrandis
 ##
 
 NAME		= nibbler
 
-SRC		= /src/map.cpp
-		  /src/snake.cpp
+SRC		= /src/map.cpp \
+		  /src/main.cpp \
+		  /src/snake.cpp \
 		  /src/game.cpp
-		  /src/main.cpp
+
+CFLAGS		= -W -Wall -Wextra
 
 OBJ		= $(SRC:.cpp=.o)
 
 all:		$(NAME)
 
 $(NAME):	$(OBJ)
-		cc -o $(NAME) $(OBJ)
+		g++ -o $(NAME) $(OBJ)
 
 clean:
 		rm -f $(OBJ)
 
 fclean:		rm -f $(NAME)
+
+re:		fclean all
+
+.PHONY:		all clean fclean re

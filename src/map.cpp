@@ -5,12 +5,12 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar  7 19:23:37 2014 morgane ferrandis
-** Last update Tue Apr  1 18:39:35 2014 morgane ferrandis
+** Last update Tue Apr  1 18:20:48 2014 morgane ferrandis
 */
 
-#include <std>
-#include "map.h"
-#include "snake.h"
+#include <iostream>
+#include "../includes/map.h"
+#include "../includes/snake.h"
 
 #define	XSNAKE snake.body.x
 #define	YSNAKE snake.body.y
@@ -37,8 +37,8 @@ Map::Map(int x, int y)
 }
 
 Map::~Map()
-: ~SNAKE()
 {
+  this->snake.~Snake();
 }
 
 // Map::Map(Map map)
@@ -59,7 +59,7 @@ const int	Map::getXMax()
   return (this->xMax);
 }
 
-const int	getYMax()
+const int	Map::getYMax()
 {
   return (this->yMax);
 }

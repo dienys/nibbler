@@ -5,13 +5,13 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar  7 18:53:16 2014 morgane ferrandis
-** Last update Tue Apr  1 18:50:56 2014 morgane ferrandis
+** Last update Tue Apr  1 18:18:27 2014 morgane ferrandis
 */
 
 #ifndef SNAKE_H_
 # define SNAKE_H_
 
-#include <std>
+#include <iostream>
 
 # define XBASE 500
 # define YBASE 600
