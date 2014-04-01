@@ -5,33 +5,56 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar  7 19:23:37 2014 morgane ferrandis
-** Last update Fri Mar 14 20:19:15 2014 morgane ferrandis
+** Last update Tue Apr  1 18:39:35 2014 morgane ferrandis
 */
+
+#include <std>
+#include "map.h"
+#include "snake.h"
+
+#define	XSNAKE snake.body.x
+#define	YSNAKE snake.body.y
 
 Map::Map(int x, int y)
 {
-  
+  std::list<BlockBody>::iterator	it;
+  Line		line(x, VOID);
+  Grid		map(y, line);
+  Snake		snake();
+
+  it = snake.body.begin();
+  this->snake = snake;
+  while (it != snake.body.end())
+    {
+      if (it == snake.body.end())
+	map[XSNAKE][YSNAKE] = HEAD;
+      map[XSNAKE][YSNAKE] = SNAKE;
+      ++it;
+    }
+  this->map = map;
+  this->xMax = x;
+  this->yMax = y;
 }
 
 Map::~Map()
+: ~SNAKE()
 {
-  
 }
 
-Map::Map(Map map)
-{
-  this->x = map->x;
-  this->y = map->y;
-}
+// Map::Map(Map map)
+// {
+//   this->x = map->x;
+//   this->y = map->y;
+// }
 
-Map	&Map::Operator=(Map map)
-{
-  this->x = map->x;
-  this->y = map->y;
-  return (*this);
-}
+// Map	&Map::Operator=(Map map)
+// {
+//   this->x = map->x;
+//   this->y = map->y;
+//   return (*this);
+// }
 
-const int	getXMax()
+const int	Map::getXMax()
 {
   return (this->xMax);
 }

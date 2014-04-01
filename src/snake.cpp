@@ -5,16 +5,26 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar 14 17:34:31 2014 morgane ferrandis
-** Last update Fri Mar 14 19:32:35 2014 morgane ferrandis
+** Last update Tue Apr  1 18:53:34 2014 morgane ferrandis
 */
 
 #include "snake.h"
 
 // class Snake
 
-Snake::Snake(std::list<BlockBody> body)
- : body(body)
+Snake::Snake()
 {
+  std::list<BlockBody>	body;
+  BlockBody		block(XBASE, YBASE);
+  int			i;
+
+  i = 0;
+  while (i < 4)
+    {
+      body.push_front(block);
+      ++i;
+      BlockBody	block(XBASE, YBASE - i);
+    }
 }
 
 ~Snake::Snake(std::list<BlockBody> body)

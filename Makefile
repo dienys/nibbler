@@ -5,12 +5,14 @@
 ## Login   <bloubtek@epitech.net>
 ## 
 ## Started on  Fri Mar 14 14:26:23 2014 morgane ferrandis
-## Last update Fri Mar 14 14:53:34 2014 morgane ferrandis
+## Last update Tue Apr  1 18:54:37 2014 morgane ferrandis
 ##
 
 NAME		= nibbler
 
 SRC		= /src/map.cpp
+		  /src/snake.cpp
+		  /src/game.cpp
 		  /src/main.cpp
 
 OBJ		= $(SRC:.cpp=.o)
