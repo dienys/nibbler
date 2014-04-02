@@ -5,8 +5,10 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar 14 20:13:05 2014 morgane ferrandis
-** Last update Tue Apr  1 18:15:32 2014 morgane ferrandis
+** Last update Tue Apr  1 18:50:33 2014 morgane ferrandis
 */
+
+#include "../includes/Bonus.h"
 
 Bonus::Bonus(int x, int y, int score)
 {
@@ -19,17 +21,17 @@ Bonus::~Bonus()
 {
 }
 
-int	getX()
+const int	Bonus::getX()
 {
   return (this->x);
 }
 
-int	getY()
+const int	Bonus::getY()
 {
   return (this->y);
 }
 
-int	getScore()
+const int	Bonus::getScore()
 {
   return (this->score);
 }

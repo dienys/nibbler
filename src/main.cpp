@@ -5,10 +5,10 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Sat Mar 15 15:40:36 2014 morgane ferrandis
-** Last update Tue Apr  1 18:16:10 2014 morgane ferrandis
+** Last update Wed Apr  2 15:31:52 2014 morgane ferrandis
 */
 
-#include "game.h"
+#include "../includes/game.h"
 
 int	main()
 {

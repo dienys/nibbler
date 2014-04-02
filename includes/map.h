@@ -5,35 +5,37 @@
 ** Login   <bloubtek@epitech.net>
 ** 
 ** Started on  Fri Mar  7 18:53:40 2014 morgane ferrandis
-** Last update Tue Apr  1 17:30:16 2014 morgane ferrandis
+** Last update Wed Apr  2 19:12:53 2014 morgane ferrandis
 */
 
 #ifndef MAP_H_
 # define MAP_H_
 
+#include <iostream>
+#include <vector>
+#include "Bonus.h"
 #include "snake.h"
 
-std::vector<int>	Line;
-std::vector<Line>	Grid;
-
-class		Map
+class					Map
 {
-  int		xMax;
-  int		yMax;
-  Grid		map;
-  Snake		snake;
+  int					xMax;
+  int					yMax;
+  std::vector< std::vector<int> >	map;
+  Snake					snak;
 
-  Map(Map map);
-  Map		&Operator=(Map map);
+  // Map(Map map);
+  // Map		&Operator=(Map map);
 
 public:
 
-  explicit Map(int x, int y);
+  Bonus					bon;
+
+  Map(int x, int y);
   ~Map();
-  Bonus		bonus;
-  void		initWall();
-  const int	getXMax();
-  const int	getYMax();
-}
+  const void				getBonus();
+  void					initWall();
+  const int				getXMax();
+  const int				getYMax();
+};
 
 #endif /* !MAP_H_ */

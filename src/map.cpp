@@ -5,32 +5,34 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Fri Mar  7 19:23:37 2014 morgane ferrandis
-** Last update Tue Apr  1 18:20:48 2014 morgane ferrandis
+** Last update Wed Apr  2 19:22:02 2014 morgane ferrandis
 */
 
 #include <iostream>
-#include "../includes/map.h"
+#include <vector>
+#include <iterator>
 #include "../includes/snake.h"
-
-#define	XSNAKE snake.body.x
-#define	YSNAKE snake.body.y
 
 Map::Map(int x, int y)
 {
   std::list<BlockBody>::iterator	it;
-  Line		line(x, VOID);
-  Grid		map(y, line);
-  Snake		snake();
+  std::vector<int>			line(0, y);
+  std::vector<line>			map(line, x);
+  Snake					snak;
+  std::list<BlockBody>			list;
+  Map					mymap;
 
-  it = snake.body.begin();
-  this->snake = snake;
-  while (it != snake.body.end())
+  list = snak.getList();
+  it = list.begin();
+  while (it != list.end())
     {
-      if (it == snake.body.end())
-	map[XSNAKE][YSNAKE] = HEAD;
-      map[XSNAKE][YSNAKE] = SNAKE;
+      if (it == list.begin())
+	map[list.x][list.y] = HEAD;
+      map[list.x][list.y] = SNAKE;
       ++it;
     }
+
+  this->snak = snak;
   this->map = map;
   this->xMax = x;
   this->yMax = y;
@@ -38,7 +40,7 @@ Map::Map(int x, int y)
 
 Map::~Map()
 {
-  this->snake.~Snake();
+
 }
 
 // Map::Map(Map map)

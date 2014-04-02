@@ -5,12 +5,14 @@
 ** Login   <ferran_m@epitech.eu>
 ** 
 ** Started on  Sat Mar 15 15:46:33 2014 morgane ferrandis
-** Last update Wed Mar 19 17:31:52 2014 morgane ferrandis
+** Last update Wed Apr  2 15:36:07 2014 morgane ferrandis
 */
+
+#include "../includes/map.h"
 
 void	game()
 {
-  Map::map	map(200, 200);
+  Map	map(200, 200);
 
 
 }
